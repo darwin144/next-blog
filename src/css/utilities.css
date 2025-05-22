@@ -1,0 +1,5 @@
+
+
+.bg-gradient-app{
+@apply fixed w-full z-10 top-0 left-0 bg-gradient-to-r from-white via-blue-100 to-blue-300 shadow-md
+}
