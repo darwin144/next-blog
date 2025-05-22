@@ -1,50 +1,12 @@
 // // 'use client'
-
-
-// import Link from 'next/link'
-// import ThemeSwitch  from '../components/ThemeSwitch'
-// import { siteConfig } from '@/config/site'
-
-// export default function Header() {
-//   return (
-//     <header className="flex justify-between items-center px-6 py-4 border-b dark:border-gray-700">
-//       {/* Logo */}
-//       <div className="text-xl font-bold text-gray-900 dark:text-gray-100">
-//         {siteConfig.title}
-//       </div>
-
-//       {/* Navbar */}
-//       <nav className="space-x-4">
-//         {siteConfig.navLinks.map((link) => (
-//           <Link
-//             key={link.name}
-//             href={link.href}
-//             className="text-gray-700 dark:text-gray-200 hover:underline"
-//           >
-//             {link.name}
-//           </Link>
-//         ))}
-//       </nav>
-
-//       {/* Right Section */}
-//       <div className="flex items-center">
-//         <span className="text-gray-600 dark:text-gray-300 text-sm mr-2 hover:text-blue">Switch Theme</span>
-//         <ThemeSwitch />
-//       </div>
-//     </header>
-//   )
-// }
-
-
-
-
 import { useState } from "react";
+import '../css/utilities.css';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full z-10 top-0 left-0 bg-gradient-to-r from-white via-blue-100 to-blue-300 shadow-md">
+    <nav className="bg-gradient-app">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
